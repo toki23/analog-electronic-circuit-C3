@@ -1,7 +1,9 @@
 * Rc直列回路
+.param Ra=18k Rb=100k Rc=5.1k Re=1.1k
+.param C1=1^(-2) C2=3.3^(-8) Ce=1^(-4)
 V 1 0 sin(0V 1V 50Hz)
 R 2 0 1k
-C 1 2 1u 
+C 1 2 1u
 .tran 0.1ms 40ms 20ms
 .control
     run
